@@ -12,6 +12,9 @@ header {
     padding: 1%;
     background: linear-gradient(0.25turn, #3f87a6, #caaee0, #8d1df7);
     color: rgb(0, 0, 0);
+    width: 100%;
+    position:fixed;
+    height: 5%;
   }
 
 nav ul {
@@ -36,11 +39,12 @@ nav ul {
   }
 
 main{
-
+  margin-top: 3%;
 }
 section article{
     display: flex;
     background-color: #8d1df7;
+    height: 100%;
 
 }
 section article h1 {
@@ -49,12 +53,14 @@ margin-top: 0%;
 background-color: aquamarine;
 width: 10%;
 flex-direction: row;
+border-right: 3px;
+border-style: groove;
+border-color: #000000;
+height: 150%;
 }
 section article div {
-    background-color: #2bff00;
+    background-color: #ffc800;
     align-items: flex-end;
-    justify-content: end;
-
 }
 section article div li:hover {
   background-color: #ff3c00;
