@@ -36,21 +36,28 @@ nav ul {
   }
 
 main{
-    display: flex;
 
 }
 section article{
-    display: inline-block;
+    display: flex;
+    background-color: #8d1df7;
 
 }
 section article h1 {
 margin-left: 20%;
+margin-top: 0%;
 background-color: aquamarine;
 width: 10%;
 flex-direction: row;
 }
 section article div {
-    background-color: #8d1df7;
+    background-color: #2bff00;
+    align-items: flex-end;
+    justify-content: end;
+
+}
+section article div li:hover {
+  background-color: #ff3c00;
 
 }
 
