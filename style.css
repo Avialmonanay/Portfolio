@@ -4,26 +4,29 @@ body {
     line-height: 1.5;
     font-size: 16px;
   }
-  
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-    background-color: #13293d;
-    color: #fff;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    color: rgb(0, 0, 0);
   }
 
 nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     min-width: 300px;
+    
   }
   
   nav a {
-    color: #b9C6ae;
+    color: #000000;
     font-weight: bold;
     text-decoration: none;
+    font-size: 150%;
+    margin: 0px 20px 0px 20px;
   }
 
   h1 {
