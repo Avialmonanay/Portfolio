@@ -10,7 +10,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    background: linear-gradient(0.25turn, #3f87a6, #caaee0, #8d1df7);
     color: rgb(0, 0, 0);
   }
 
@@ -34,3 +34,32 @@ nav ul {
     font-size: 200%;
     font-family: serif;
   }
+
+main{
+    display: flex;
+
+}
+section article{
+    display: inline-block;
+
+}
+section article h1 {
+margin-left: 20%;
+background-color: aquamarine;
+width: 10%;
+flex-direction: row;
+}
+section article div {
+    background-color: #8d1df7;
+
+}
+
+aside{
+    border-width: 0px 1px 0px 0px;
+    border-style: groove;
+    border-color: #000000;
+    width:20%;
+    display: inline-block;
+    margin-bottom: 10%;
+
+}
