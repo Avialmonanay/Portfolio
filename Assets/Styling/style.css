@@ -35,6 +35,10 @@ nav ul {
     margin: 0px 20px 0px 20px;
   }
 
+  Nav ul li:hover{
+    background-color:#b46bf8 ;
+  }
+
   h1 {
     margin: 2%;
     font-size: 200%;
@@ -67,15 +71,19 @@ background-clip: text;
 color: transparent;
 }
 section article div {
-    background-color: #ffc800;
+
     max-width: 60%;
     text-align: center;
     font-size: 125%;
     margin: 3px
 }
 section article div li:hover {
-  background-color: #ff3c00;
+  background-color: #dadada
 
+}
+
+section article div img:hover {
+ opacity: .5;
 }
 
 aside{
@@ -93,9 +101,16 @@ aside{
   width: 20%;
   margin: 0;
   position: absolute;
+  z-index: -1;
 }
 
 #heading-image{
   display:flex;
   width:100%;
+}
+
+#MyWork{
+max-width: 75%;
+width: 100%;
+display: flex;
 }
