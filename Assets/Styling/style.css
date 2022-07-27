@@ -18,8 +18,12 @@ header {
     width: 100%;
     position:fixed;
     height: 5%;
+    z-index: 100;
   }
 
+nav {
+  display: flex;
+}
 
 nav ul {
     display: flex;
@@ -58,7 +62,6 @@ section article h1 {
 margin-left: 20%;
 margin-top: 0%;
 margin-bottom: 0%;
-background-color: aquamarine;
 width:15%;
 flex-direction: row;
 border-right: 3px;
@@ -70,13 +73,19 @@ background-image: linear-gradient(0.25turn, #00516e, #531091);
 background-clip: text;
 color: transparent;
 }
-section article div {
 
+section article div {
+    position: relative;
     max-width: 60%;
     text-align: center;
     font-size: 125%;
-    margin: 3px
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    
 }
+
+
 section article div li:hover {
   background-color: #dadada
 
@@ -84,16 +93,6 @@ section article div li:hover {
 
 section article div img:hover {
  opacity: .5;
-}
-
-aside{
-    border-width: 0px 1px 0px 0px;
-    border-style: groove;
-    border-color: #000000;
-    width:20%;
-    display: inline-block;
-    margin-bottom: 10%;
-
 }
 
 #avatar{
@@ -109,8 +108,77 @@ aside{
   width:100%;
 }
 
-#MyWork{
-max-width: 75%;
-width: 100%;
-display: flex;
-}
+
+
+.placeholder{
+  width: 30%;
+  height: 30%;
+  }
+
+  .placeholder::after {
+    display: flex;
+    flex-direction: column;
+  }
+
+#mywork{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    body,
+    header,
+    nav,
+    section,
+    main,
+    article{
+      flex-direction: column;
+      justify-content: center;
+    }
+    #heading-image {
+      display: none
+    }
+    #avatar{
+      display: none;
+    }
+
+    header {
+      padding: 1%;
+      background: linear-gradient(0.25turn, #3f87a6, #caaee0, #8d1df7);
+      color: rgb(0, 0, 0);
+      width: 100%;
+      height: 150%;
+      position:relative;
+      height: 5%;
+      z-index: 100;
+    }
+
+    nav a {
+      color: #000000;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 100%;
+      margin: 0px 20px 0px 20px;
+      flex-direction: column;
+    }
+  
+    h1 {
+      margin: 2%;
+      font-size: 100%;
+      font-family: serif;
+      display: flex;
+    }
+    section article h1 {
+      position: relative;
+      border-color: #000000;
+      border-width: 0px 0px 2px 0px;
+      text-align: center;
+    }
+
+    section article{
+      background-color: #3f87a6;
+      display: flex;
+      text-align: center;
+    }
+  }
