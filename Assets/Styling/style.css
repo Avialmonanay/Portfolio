@@ -20,6 +20,7 @@ header {
     position:fixed;
     height: 5%;
     z-index: 100;
+    
   }
 
   /* nav bar sizing and placement */
@@ -32,6 +33,7 @@ nav ul {
     justify-content: space-around;
     min-width: 300px;
   }
+
   
   nav a {
     color: #000000;
@@ -39,6 +41,7 @@ nav ul {
     text-decoration: none;
     font-size: 150%;
     margin: 0px 20px 0px 20px;
+    padding: 0 15px 0 0;
   }
 
   /* highlight nav items when hovering */
@@ -150,6 +153,9 @@ figcaption {
   #myworkunderitems{
     display: flex;
     flex-direction: row;
+    width: 100%;
+    max-width:100% ;
+
   
   }
 
