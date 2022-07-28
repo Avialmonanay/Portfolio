@@ -8,6 +8,7 @@ body {
     font-size: 16px;
   }
 
+  /* Header includes name and Nav Bar Icons. Makes the nav bar stay at the top of the page while scrolling */
 header {
     display: flex;
     justify-content: space-between;
@@ -21,6 +22,7 @@ header {
     z-index: 100;
   }
 
+  /* nav bar sizing and placement */
 nav {
   display: flex;
 }
@@ -39,24 +41,30 @@ nav ul {
     margin: 0px 20px 0px 20px;
   }
 
+  /* highlight nav items when hovering */
   Nav ul li:hover{
     background-color:#b46bf8 ;
   }
 
+
+/* adjust font size on headers to make them fill more space */
   h1 {
     margin: 2%;
     font-size: 200%;
     font-family: serif;
   }
 
+  /* brings elements down so the yare not covered by nav bar */
 main{
   margin-top: 3%;
 }
+
+/* allows articles to flex with scaling */
 section article{
     display: flex;
     height: 100%;
     
-
+/* adjusts article headers to the correct size, color and placement */
 }
 section article h1 {
 margin-left: 20%;
@@ -74,6 +82,7 @@ background-clip: text;
 color: transparent;
 }
 
+/* adjusts article divs to put them in the correct order and placement. */
 section article div {
     position: relative;
     max-width: 60%;
@@ -85,16 +94,31 @@ section article div {
  
 }
 
-
+/* makes contact information glow when hovering */
 section article div li:hover {
   background-color: #dadada
 
 }
 
+/* makes my work images glow when hovering */
 section article div img:hover {
  opacity: .5;
 }
 
+/* Keeps divs from gettings to close to eachother */
+figcaption {
+  margin: 0% 0% 5% 0%;
+}
+
+/* currently just sizing the placeholder images for future projects. This will be more defined as I add images and new items. */
+.placeholder{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+  }
+
+/* controls sizing of my photo next to about me */
 #avatar{
   height: 20%;
   width: 20%;
@@ -103,24 +127,17 @@ section article div img:hover {
   z-index: -1;
 }
 
+
+/* controls sizing of heading image when scaling */
 #heading-image{
   display:flex;
   width:100%;
 }
 
 
-figcaption {
-  margin: 0% 0% 5% 0%;
-}
-.placeholder{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  min-width: 50%;
-  }
 
 
-
+/* makes my work larger than the others */
 #mywork{
   display: flex;
   flex-direction: row;
@@ -129,12 +146,15 @@ figcaption {
 
   }
 
+  /* brings other work items below main work item and organizes as a row. */
   #myworkunderitems{
     display: flex;
     flex-direction: row;
   
   }
 
+
+  /*media controls items for scaling on different devices. */
   @media screen and (max-width: 768px) {
     body,
     header,
@@ -190,7 +210,6 @@ figcaption {
     }
 
     section article{
-      background-color: #3f87a6;
       display: flex;
       text-align: center;
     }
