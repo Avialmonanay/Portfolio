@@ -124,6 +124,8 @@ section article div img:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  height: 400px;
+  width: 600px;
   }
 
   @media screen and (max-width: 768px) {
@@ -174,11 +176,22 @@ section article div img:hover {
       border-color: #000000;
       border-width: 0px 0px 2px 0px;
       text-align: center;
+      margin: 0px 0px 0px 0px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
     }
 
     section article{
       background-color: #3f87a6;
       display: flex;
       text-align: center;
+    }
+    section article div {
+      max-width: 100%;
+    }
+    #mywork{
+      object-fit: contain;
+      width: 100%;
     }
   }
